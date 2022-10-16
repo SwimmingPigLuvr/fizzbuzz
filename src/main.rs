@@ -12,6 +12,20 @@ fn fizzbuzz() {
     }
 }
 
+fn soda_bee() {
+    for f in 1..100 {
+        match (f % 3, f % 5) {
+            (0, 0) => {println!("🥤🐝")}
+            (0, _) => {println!("🥤")}
+            (_, 0) => {println!("🐝")}
+            _ => {
+                println!("{}", f.cyan().dimmed())
+            }
+        }
+    }
+}
+
 fn main() {
-    fizzbuzz()
+    // fizzbuzz()
+    soda_bee()
 }
